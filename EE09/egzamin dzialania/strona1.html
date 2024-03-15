@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Strona główna</title>
+</head>
+
+<body>
+  <header>
+    <a href="index.html"><img src="baner.jpg" alt="baner"></a>
+  </header>
+
+  <nav>
+    <a href="strona1.html">- Proste działania</a>
+    <a href="strona2.php">- Potęgowanie</a>
+  </nav>
+  <main>
+    <h1>PROSTE DZIAŁANIA</h1>
+    <p><i>Podaj pierwszą liczbę:</i>
+      <input type="number" id="i1" /></p>
+    <p><i>Podaj drugą liczbę:</i>
+      <input type="number" id="i2" /></p>
+    <p>
+      <button onclick="f(1)">DODAWANIE</button>
+      <button onclick="f(2)">ODEJMOWANIE</button>
+      <button onclick="f(3)">MNOŻENIE</button>
+      <button onclick="f(4)">DZIELENIE</button>
+    </p>
+    <output id="o1"></output>
+  </main>
+
+  <script src="index.js"></script>
+</body>
+</html>
