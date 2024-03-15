@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+  font-family: Verdana;
+}
+
+.main, .main2 {
+  background: BurlyWood;
+  height: 700px;
+  float: left;
+}
+
+.main {
+  width: 70%;
+}
+
+.main2 {
+  width: 30%;
+}
+
+.title, #miniatura {
+  background: Sienna;
+  color: orange;
+  height: 100px;
+  float: left;
+}
+
+.title {
+  width: 80%;
+}
+
+#miniatura {
+  width: 20%;
+}
+
+.footer {
+  background: Sienna;
+  color: orange;
+  text-align: center;
+  clear: both;
+}
+
+img {
+  margin: 7px;
+  padding: 5px;
+  border: 1px solid RosyBrown;
+}
+
+img:hover {
+  border: 1px solid Maroon;
+}

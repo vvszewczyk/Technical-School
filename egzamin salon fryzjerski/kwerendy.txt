@@ -1,4 +1,0 @@
-1. SELECT imie, nazwisko FROM kadra;
-2. SELECT COUNT(*) FROM `uslugi` WHERE rodzaj = 2;
-3. CREATE USER `fryzjer`@`%` IDENTIFIED VIA mysql_native_password USING `Fryz12`;
-4. GRANT CREATE, ALTER, SELECT ON `egzamin2`, `kadra` TO `fryzjer`@`%`;

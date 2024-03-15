@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styl2.css">
+    <title>Salon Fryzjerski</title>
+</head>
+
+<body>
+    <header>
+        <div id="naglowek">
+            <a href="index.html">
+                <h1>SALON FRYZJERSKI</h1>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section id="promocje">
+            <h2>Promocje</h2>
+            <img src="obraz2.jpg" alt="Czesanie" style="width:100%; max-width:300px;">
+            <article>
+                <h3>Dziś promocja na strzyżenie włosów</h3>
+                <form>
+                    <input type="radio" name="wlosy" id="kro">Krótkie <br>
+                    <input type="radio" name="wlosy" id="sre">Średnie <br>
+                    <input type="radio" name="wlosy" id="pol">Półdługie <br>
+                    <input type="radio" name="wlosy" id="dlu">Długie <br>
+                </form>
+                <button onclick="pokazCene()">Odkryj promocje</button>
+                <span id="wynik"></span>
+            </article>
+        </section>
+    </main>
+
+    <aside>
+        <section id="menu">
+            <h2>MENU</h2>
+            <nav>
+                <ol>
+                    <li>
+                        <a href="fryzura.html">Strzyżenie</a>
+                        <ul>
+                            <li>Krótkie</li>
+                            <li>Średnie</li>
+                            <li>Półdługie</li>
+                            <li>Długie</li>
+                        </ul>
+                    </li>
+                    <li>Czesanie</li>
+                    <li>Koloryzacja</li>
+                </ol>
+            </nav>
+            <figure>
+                <img src="obraz1.jpg" alt="Fryzjer" style="width:100%; max-width:300px;">
+            </figure>
+        </section>
+    </aside>
+
+    <footer>
+        <p>Autor: 00000000000</p>
+    </footer>
+
+    <script>
+        function pokazCene() {
+            var cena = 0;
+            if (document.getElementById('kro').checked) cena = 25;
+            if (document.getElementById('sre').checked) cena = 30;
+            if (document.getElementById('pol').checked) cena = 40;
+            if (document.getElementById('dlu').checked) cena = 50;
+            document.getElementById('wynik').innerHTML = "Cena strzyżenia: " + cena + " zł";
+        }
+    </script>
+</body>
+
+</html>

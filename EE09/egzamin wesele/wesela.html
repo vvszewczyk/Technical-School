@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styl5.css">
+    <title>Dom Weselny</title>
+    <script type="text/javascript">
+        function calculateCost() {
+            var guestsNumber = document.getElementById("guestsNumber").value;
+            var totalCost = 0;
+            totalCost = guestsNumber * 100;
+            if (document.getElementById("withAfterparty").checked) {
+                totalCost *= 1.3;
+            }
+            document.getElementById("showCost").innerHTML = totalCost.toFixed(2) + " zł";
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>
+            <img src="logo.png" alt="" height="70">Dom Weselny zorganizuje wesele za Ciebie<img src="logo.png" alt="" height="70">
+        </h1>
+    </header>
+    <div id="dw">
+        <h2>Dom Weselny</h2>
+        <p>ul. Przemysłowa 5</p>
+        <p>Kalisz</p>
+        <p><a href="logo.png">Pobierz logo</a></p>
+    </div>
+    <div id="of">
+        <h2>Oferujemy</h2>
+        <ul>
+            <li>Wesela</li>
+            <li>Bankiety</li>
+            <li>Konferencje</li>
+        </ul>
+    </div>
+    <div id="reg">
+        <p><a href="Regulamin.txt">czytaj regulamin</a></p>
+    </div>
+    <div id="fun">
+        <h2>Ile będzie kosztowało moje wesele?</h2>
+        <label for="guestsNumber">Podaj liczbę gości: </label><input type="number" id="guestsNumber">
+        <br>
+        <input type="checkbox" id="withAfterparty"><label for="withAfterparty">Wesele z poprawinami?</label>
+        <br>
+        <input type="button" value="Oblicz koszt" onclick="calculateCost()">
+        <p id="showCost"></p>
+    </div>
+    <footer>
+        Stronę internetową opracował: 00000000000
+    </footer>
+</body>
+
+</html>

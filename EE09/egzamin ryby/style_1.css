@@ -1,0 +1,48 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.Portalwed, footer {
+    background-color: #4682B4;
+    color: white;
+    font-size: 120%;
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+main {
+    background-color: #40E0D0;
+    display: flex;
+    height: 500px;
+    min-height: 86vh;
+}
+
+article {
+    width: 40%;
+}
+
+section {
+    width: 60%;
+}
+
+.ryba { 
+	border: solid 1px #000080; 
+	padding: 5px; 
+	margin: 10px; 
+}
+
+
+.kwerenda-link { 
+	text-decoration: none; 
+}

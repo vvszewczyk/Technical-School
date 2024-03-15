@@ -1,0 +1,53 @@
+1. SELECT imie, telefon, szczepienie, opis FROM `zwierzeta`
+2. SELECT id, imie, wlasciciel FROM `zwierzeta` WHERE `rodzaj`= 1
+3. SELECT `zwierzeta`.`imie`, `uslugi`.`nazwa` FROM `zwierzeta` INNER JOIN `uslugi` ON `zwierzeta`.`usluga_id` = `uslugi`.`id`
+4. SELECT AVG(`uslugi`.`cena`) FROM `uslugi`
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Jan Kupczyk
