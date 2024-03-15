@@ -1,0 +1,73 @@
+body {
+    font-family: Georgia, serif;
+    background-color: #fffafa;
+}
+
+form {
+    margin: 80px;
+}
+
+table {
+    margin: auto;
+    color: white;
+    text-align: center;
+    width: 80%;
+    border-collapse: collapse;
+    border: 1px dotted white;
+}
+
+th, td {
+    padding: 8px; 
+}
+
+tr:hover {
+    background-color: #d3d3d3;
+    color: black;
+}
+
+header, section, footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div#naglowek, div#podzial {
+    display: flex;
+    justify-content: space-between;
+}
+
+div#logo, div#baner, div#glowny, div#lewy, div#prawy {
+    background-color: #ff7f50;
+}
+
+div#logo, div#baner {
+    width: 25%;
+    height: 100px;
+}
+
+div#baner {
+    width: 75%;
+    text-align: center;
+    font-size: 130%;
+}
+
+div#glowny {
+    padding: 70px;
+}
+
+div#lewy {
+    width: 50%;
+    padding: 20px;
+}
+
+div#prawy {
+    width: 50%;
+    padding: 20px;
+    text-align: right;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #f0f0f0;
+}
