@@ -1,0 +1,12 @@
+$TTL    604800
+@       IN      SOA     serwer.mydomain.local root.serwer.mydomain.local. (
+                              2         ; Serial
+                         604800         ; Refresh
+                          86400         ; Retry
+                        2419200         ; Expire
+                         604800 )       ; Negative Cache TTL
+;
+@       IN      NS      serwer.mydomain.local.
+@       IN      A       172.16.0.10
+www     IN      A       172.16.0.10
+@       IN      AAAA    ::1

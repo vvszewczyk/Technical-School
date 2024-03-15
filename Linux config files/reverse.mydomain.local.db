@@ -1,0 +1,13 @@
+reverse.mydomain.local.db file:
+$TTL    604800
+@       IN      SOA     serwer.mydomain.local root.serwer.mydomain.local. (
+                              2         ; Serial
+                         604800         ; Refresh
+                          86400         ; Retry
+                        2419200         ; Expire
+                         604800 )       ; Negative Cache TTL
+;
+@             IN      NS      serwer.mydomain.local.
+nameserver    IN      A       172.16.0.10
+10            IN      PTR     serwer.mydomain.local.
+11            IN      PTR     klient1.mydomain.local.
